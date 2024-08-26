@@ -6,7 +6,7 @@
 /*   By: edforte <edforte@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 19:42:33 by edforte           #+#    #+#             */
-/*   Updated: 2024/08/21 18:17:34 by edforte          ###   ########.fr       */
+/*   Updated: 2024/08/26 16:37:31 by edforte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ void	put_floor(t_data *game, t_texture sprites)
 		while (rows < game->max_x - 1)
 		{
 			if (game->matrix[columns][rows] == '1')
+			{
 				game->img_to_win = mlx_put_image_to_window(game->mlx_ptr,
 						game->win_ptr, sprites.img_brr,
 						rows * 48, columns * 48);
+			}
 			else if (game->matrix[columns][rows] == '0')
 				game->img_to_win = mlx_put_image_to_window(game->mlx_ptr,
 						game->win_ptr, sprites.img_floor,

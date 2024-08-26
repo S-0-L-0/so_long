@@ -6,7 +6,7 @@
 /*   By: edforte <edforte@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 19:29:08 by edforte           #+#    #+#             */
-/*   Updated: 2024/08/21 18:09:41 by edforte          ###   ########.fr       */
+/*   Updated: 2024/08/26 19:18:41 by edforte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	put_right_walls(t_data *gm, t_texture sprites)
 
 	rows = gm->max_x - 1;
 	columns = 0;
-	while (columns < gm->max_x)
+	while (columns < gm->max_y)
 	{
 		if (columns == 0)
 			gm->img_to_win = mlx_put_image_to_window(gm->mlx_ptr,

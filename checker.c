@@ -6,7 +6,7 @@
 /*   By: edforte <edforte@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 15:34:05 by edforte           #+#    #+#             */
-/*   Updated: 2024/08/21 20:40:22 by edforte          ###   ########.fr       */
+/*   Updated: 2024/08/26 16:34:52 by edforte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	checker(t_data *game, t_position *player, int ac, char **av)
 		return (1);
 	}
 	free_matrix(game->mx_copy);
-	free_matrix(game->matrix);
 	return (0);
 }
 
